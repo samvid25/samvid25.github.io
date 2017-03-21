@@ -210,7 +210,7 @@ hr{
 
 #projects{
   background-color: rgba(255,255,255,0.1);
-  height: 150px;
+  height: 625px;
 }
 
 #resume{
@@ -264,4 +264,31 @@ hr{
 
 .dropdown:hover .dropdown-content{
   display: block;
+}
+
+.projectName{
+  text-align: center;
+  font-size: 22pt;
+  text-decoration: underline;
+  font-family: 'Scope One', serif;
+
+}
+
+.projectDuration{
+  font-family: 'Contrail One', cursive;
+  font-style: italic;
+  text-align: center;
+  font-size: 15pt;
+}
+
+.projectContent{
+  text-align: center;
+}
+
+.project{
+  color: white;
+  font-family: 'Slabo 27px', serif;
+  font-size: 16pt;
+  opacity: 0.6;
+
 }
