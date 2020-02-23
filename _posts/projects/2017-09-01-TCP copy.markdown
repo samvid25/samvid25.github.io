@@ -1,0 +1,9 @@
+---
+title: "Editor"
+category: projects
+startdate: 2017-09-23 22:10
+enddate: 2017-10-23 22:10
+hidden: true # don't count this post in blog pagination
+description: "A text-editor built using the ElectronJS framework"
+githublink: https://github.com/samvid25/Editor
+---

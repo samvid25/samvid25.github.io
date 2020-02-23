@@ -1,0 +1,81 @@
+---
+layout: page
+title: Publications
+---
+
+<style type="text/css">
+
+	.paper-details {
+		display: none;
+	}
+
+	.alignleft {
+		width:80%;
+		float:left;
+		text-align: left;
+	}
+
+	.alignright {
+		width:20%;
+		float:left;
+		text-align: right;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.title {
+		cursor: pointer;
+	}
+
+</style> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+	function drop(v)
+	{
+		$('#'+v).slideToggle();
+	}
+</script>
+
+<section class="list">
+    {% for category in site.categories %}
+        {% if category[0] == "papers" %}
+            {% for paper in category[1] %}
+                <div class="container item {% if paper.star %}star{% endif %}" onclick="drop('{{ paper.paperid }}')">
+					<div class="title">{{ paper.title }}</div>
+					<div class="conference-date">
+						{{ paper.conference }}, {{ paper.date | date: "%B %Y" }}
+					</div>
+					<div id="{{ paper.paperid }}" class="paper-details">
+						<div class="paper-authors">Authors: {{ paper.authors }}</div>
+						<br>
+						<div class="abstract">{{ paper.abstract }}</div>
+
+						<!-- <table style="padding:0;">
+							<tr>
+								<td>Authors:</td>
+								<td>{{ paper.authors }}</td>
+							</tr>
+							<tr>
+								<td>Abstract:</td>
+								<td class="abstract">{{ paper.abstract }}</td>
+							</tr>
+							{% if paper.paperlink %}
+								<tr>
+									<td>Link:</td>
+									<td>{{ paper.paperlink }}</td>
+								</tr>
+							{% endif %}
+						</table> -->
+					</div>
+				</div>
+				{% if paper!=category[1].last %}
+					<hr />
+				{% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</section>

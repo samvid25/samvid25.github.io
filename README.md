@@ -1,9 +1,3 @@
-# samvid25.github.io
-### My Personal Website
+# Personal-Webpage-V2
 
-Welcome to my personal website (and my first ever one at that). It is a simple website for anyone to know about me. 
-
-The website is not complete yet, and there a lot of changes that are to be made.
-Contact me if you find any bugs or have compatibality issues.
-
-
+So I've been wanting to revamp my personal webpage for a while now, and give it an upgrade from its earlier, rather amusing, design (didn't seem so back when I had made it, though). And voilà!

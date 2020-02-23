@@ -1,0 +1,31 @@
+---
+layout: page
+title: Projects
+---
+<section class="list">
+    {% for category in site.categories %}
+        {% if category[0] == "projects" %}
+            {% for project in category[1] %}
+                <div class="item {% if project.star %}star{% endif %}">
+                    {% if project.githublink %}
+                        <a class="url" href="{{ project.githublink }}">
+                            <!-- <aside><time datetime="{{ project.startdate | date:"%m-%Y" }}">{{ project.startdate | date: "%b %Y" }} - {{ project.enddate | date: "%b %Y" }}</time></aside> -->
+                            <span class="title">{{ project.title }}</span>
+                            <span class="project-date" datetime="{{ project.startdate | date:"%m-%Y" }}">{{ project.startdate | date: "%b %Y" }} - {{ project.enddate | date: "%b %Y" }}</span>
+                        </a>
+                    {% else %}
+                        <span class="title">{{ project.title }}</span>
+                        <span class="project-date" datetime="{{ project.startdate | date:"%m-%Y" }}">{{ project.startdate | date: "%b %Y" }} - {{ project.enddate | date: "%b %Y" }}</span>
+                    {% endif %}
+                </div>
+                {% if project!=category[1].last %}
+                <hr />
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</section>
+
+
+
+<!-- flag{th15 15 n0t 4 fl4g} -->

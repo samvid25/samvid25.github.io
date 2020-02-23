@@ -1,0 +1,10 @@
+---
+title: "Bitcoin Wallet"
+category: projects
+startdate: 2018-02-01 22:10
+enddate: 2018-04-30 22:10
+hidden: true # don't count this post in blog pagination
+description: "A Bitcoin wallet built using the libbitcoin framework (very buggy)"
+githublink: https://github.com/samvid25/Bitcoin-Wallet
+---
+

@@ -1,0 +1,78 @@
+
+@import "base/variables";
+@import "base/normalize";
+@import "base/syntax";
+@import "base/general";
+@import "base/helpers";
+
+@import "pages/home-blog-projects";
+@import "pages/page";
+@import "pages/post";
+@import "pages/tags";
+
+@import "components/author";
+@import "components/disqus";
+@import "components/footer";
+@import "components/header";
+@import "components/nav";
+@import "components/others";
+@import "components/pagination";
+@import "components/related";
+@import "components/share";
+@import "components/side-by-side";
+@import "components/social-links";
+@import "components/spoiler";
+
+@font-face {
+	font-family: "HelveticaNeueLight";
+	src: url("../assets/fonts/helveticaneue-light-001.ttf");
+}
+
+@font-face {
+	font-family: "HelveticaNeueThin";
+	src: url("../assets/fonts/HelveticaNeueLTStd-Th.otf");
+}
+
+body {
+	font-family: HelveticaNeueLight;
+	background-color: ffffe6;
+}
+
+#gsicon a:visited {
+	color: black
+}
+
+#graduated { cursor: auto; text-decoration:underline; color:$alpha }
+#graduated a, a:visited, a:hover, a:active { text-decoration:none; }
+#graduated img { display:none; z-index: 100}
+#graduated:hover img { display:block; z-index: 100; }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  text-decoration: underline;
+//   border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #4d4d4d;
+  box-shadow: 0px 2px 2px black;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

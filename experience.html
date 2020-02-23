@@ -1,0 +1,30 @@
+---
+layout: page
+title: Experience
+---
+<section class="list">
+    {% for category in site.categories %}
+        {% if category[0] == "experience" %}
+            {% for e in category[1] %}
+                <div class="item {% if e.star %}star{% endif %}">
+					<div>
+                        <span class="title">{{ e.title }}</span>
+                        <span class="experience-date">
+                            <time datetime="{{ e.startdate | date:"%m-%Y" }}">
+                                {% assign sd = e.startdate | date: "%B" %}
+                                {% assign ed = e.enddate | date: "%B" %}
+                                {% if ed == sd %}
+                                    {{ e.startdate | date: "%B %Y" }}
+                                {% else %}
+                                    {{ e.startdate | date: "%B %Y" }} - {{ e.enddate | date: "%B %Y" }}
+                                {% endif %}
+                            </time></span></div>
+					<div class="experience-position">{{ e.position }}</div>
+                </div>
+                {% if e!=category[1].last %}
+					<hr />
+				{% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</section>
