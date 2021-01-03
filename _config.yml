@@ -1,6 +1,6 @@
 # main text of home
 name: Samvid Dharanikota
-bio: Still trying to think of a creative, one-line bio.
+bio: Research Fellow at Microsoft Research India
 
 # twitter summary info
 # description: A blog about technology and stuff related
@@ -16,7 +16,7 @@ resume: false
 resume-local: true
 resume-url: assets/SamvidDharanikota.pdf
 
-url: https://samvid.co
+url: https://samvid.me
 
 permalink: /:title/
 
@@ -56,7 +56,7 @@ gscholar: https://scholar.google.co.in/citations?user=CC9r754AAAAJ
 authors:
     samvid:
         name: Samvid Dharanikota
-        bio: Still trying to think of a creative, one-line bio.
+        bio: Research Fellow at Microsoft Research India
         external-image: false
         picture: assets/images/profile.jpg
         # twitter: johndoe
