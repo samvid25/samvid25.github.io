@@ -3,9 +3,14 @@ title: "Blockchain Research and Applications: A Systematic Mapping Study"
 category: papers
 date: 2019-03-22 00:00
 conference: Springer IETE International Conference on Blockchain Technology (IC-BCT 2019)
-authors: Samvid Dharanikota, Sagar Bharadwaj KS, Adarsh Honawad, K. Chandrasekaran
+authors:
+- name: <b>Samvid Dharanikota</b>
+- name: Sagar Bharadwaj KS
+- name: Adarsh Honawad
+- name: K. Chandrasekaran
+  url: https://cse.nitk.ac.in/faculty/chandrasekaran-k
 abstract: Brought to the limelight by the famous Bitcoin, blockchain has since evolved, and now sees a lot of use cases apart from cryptocurrencies, such as in distributed storage systems, finance, healthcare, and so on. It is, therefore, an area of scrutiny by a lot of researchers and application developers. A significant amount of research on blockchain involves the application of blockchain technology to solve problems from various domains or improve the existing architecture of blockchain itself. The recent trend towards the decentralization of the Internet has given rise to many decentralized applications which also rely fundamentally on blockchain. In this paper, we conducted a systematic mapping study on blockchain technologies. The objective of the study is to identify and map various domains of research related to blockchain and recognize possible directions for future research. We do so by formulating a set of well-defined research questions and providing answers to them.
-paperlink: false
+paperlink: https://link.springer.com/chapter/10.1007/978-981-15-4542-9_13
 hidden: true # don't count this post in blog pagination
 paperid: 1
 ---
