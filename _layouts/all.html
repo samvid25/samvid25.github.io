@@ -7,7 +7,7 @@ layout: compress
 <head>
 
 	{% if site.analytics-google %}
-	{% include analytics-google.html %}
+		{% include analytics-google.html %}
 	{% endif %}
 
 	<meta charset="utf-8">
@@ -31,67 +31,44 @@ layout: compress
 	<script type="text/javascript" src="/assets/fullpage.js"></script>
 
 	<style>
-		{
-			% capture scss_sheet %
-		}
-
-			{
-			% include style.scss %
-		}
-
-			{
-			% endcapture %
-		}
-
-			{
-				{
-				scss_sheet | scssify
-			}
-		}
+		{% capture scss_sheet %}{% include style.scss %}{% endcapture %}
+		{{scss_sheet | scssify}}
 	</style>
 
 </head>
 
 <body>
-<div class="fullpage">
+	<div class="fullpage">
+		<div class="section active">
 
-	<div class="section active">
-
-		{% if page.title == "Home"
-   or page.title == "Blog"
-   or page.title == "Projects"
-   or page.title == "Tags"
-%}{% assign showHeader = true %}{% endif %}
-
-		{% if showHeader == true %}
-		<header class="header-home {% if site.animation %}animated{% endif %}">
-			{% if site.about %}
-			<a class="link" href="{{ site.url }}/about">
-				<img class="selfie" alt="{{ site.name }}"
-					src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
-			</a>
-			{% else %}
-			<span class="link">
-				<img class="selfie" alt="{{ site.name }}"
-					src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
-			</span>
+			{% if page.title == "Home" or page.title == "Blog" or page.title == "Projects" or page.title == "Tags" %}
+				{% assign showHeader = true %}
 			{% endif %}
 
-			<h1 class="title">{{ site.name }}</h1>
-			<h2 class="description">{{ site.bio }}</h2>
+			{% if showHeader == true %}
+				<header class="header-home {% if site.animation %}animated{% endif %}">
+					{% if site.about %}
+						<a class="link" href="{{ site.url }}/about">
+							<img class="selfie" alt="{{ site.name }}"
+								src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+						</a>
+					{% else %}
+						<span class="link">
+							<img class="selfie" alt="{{ site.name }}"
+								src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+						</span>
+					{% endif %}
 
-			{% include social-links.html %}
-		</header>
-		{% endif %}
+					<h1 class="title">{{ site.name }}</h1>
+					<h2 class="description">{{ site.bio }}</h2>
 
-		{% include nav.html %}
+					{% include social-links.html %}
+				</header>
+			{% endif %}
 
+			{% include nav.html %}
 
+		</div>
 	</div>
-
-</div>
-
-
 </body>
-
 </html>

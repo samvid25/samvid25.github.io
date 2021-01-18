@@ -8,6 +8,7 @@
 @import "pages/home-blog-projects";
 @import "pages/page";
 @import "pages/post";
+@import "pages/publications";
 @import "pages/tags";
 
 @import "components/author";
@@ -31,6 +32,11 @@
 @font-face {
 	font-family: "HelveticaNeueThin";
 	src: url("../assets/fonts/HelveticaNeueLTStd-Th.otf");
+}
+
+@font-face {
+	font-family: "TitilliumWeb-Regular";
+	src: url("../assets/fonts/TitilliumWeb-Regular.ttf");
 }
 
 body {

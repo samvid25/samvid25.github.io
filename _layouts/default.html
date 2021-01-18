@@ -25,18 +25,18 @@ layout: compress
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
     <link rel="stylesheet" href="/assets/css/academicons.min.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/fullpage.css" />
+    <link rel="stylesheet" href="/assets/css/fontawesome.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/fullpage.css" />
 
-    <script type="text/javascript" src="/assets/fullpage.js"></script>
+    <script type="text/javascript" src="/assets/js/fullpage.js"></script>
 
     <style>
-    {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
-    {{ scss_sheet | scssify }}
+        {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
+        {{ scss_sheet | scssify }}
     </style>
 
 </head>
 <body>
-
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
             <div class="post">
@@ -48,7 +48,7 @@ layout: compress
             {% endif %}
         {% endif %}
 
-            {{ content }}
+        {{ content }}
         </div>
     </div>
 
