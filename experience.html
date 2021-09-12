@@ -11,8 +11,8 @@ title: Experience
                         <span class="title">{{ e.title }}</span>
                         <span class="experience-date">
                             <time datetime="{{ e.startdate | date:"%m-%Y" }}">
-                                {% assign sd = e.startdate | date: "%B" %}
-                                {% assign ed = e.enddate | date: "%B" %}
+                                {% assign sd = e.startdate | date: "%B %Y" %}
+                                {% assign ed = e.enddate | date: "%B %Y" %}
                                 {% if ed == sd %}
                                     {{ e.startdate | date: "%B %Y" }}
                                 {% else %}
