@@ -1,6 +1,6 @@
 # main text of home
 name: Samvid Dharanikota
-bio: Research Fellow at Microsoft Research India
+bio: Grad Student at Carnegie Mellon University
 
 # twitter summary info
 # description: A blog about technology and stuff related
@@ -34,7 +34,7 @@ permalink: /:title/
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
-# twitter: mytwitter
+twitter: samvid25
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
@@ -56,7 +56,7 @@ gscholar: https://scholar.google.co.in/citations?user=CC9r754AAAAJ
 authors:
     samvid:
         name: Samvid Dharanikota
-        bio: Research Fellow at Microsoft Research India
+        bio: Grad Student at Carnegie Mellon University
         external-image: false
         picture: assets/images/profile.jpg
         # twitter: johndoe
