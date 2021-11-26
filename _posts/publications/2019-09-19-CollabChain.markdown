@@ -1,6 +1,6 @@
 ---
 title: "CollabChain: Blockchain-Backed Trustless Web-Based Volunteer Computing Platform"
-category: papers
+category: publications
 date: 2019-09-19 00:00
 conference: IFIP International Conference on Computer Information Systems and Industrial Management (pp. 509-522)
 authors:

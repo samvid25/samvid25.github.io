@@ -1,6 +1,6 @@
 ---
 title: "Breeding Unicorns: Developing Trustworthy and Scalable Randomness Beacons"
-category: papers
+category: publications
 date: 2020-04-28 00:00
 conference: PLOS ONE
 authors:

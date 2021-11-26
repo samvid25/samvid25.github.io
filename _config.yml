@@ -56,7 +56,7 @@ gscholar: https://scholar.google.co.in/citations?user=CC9r754AAAAJ
 authors:
     samvid:
         name: Samvid Dharanikota
-        bio: Grad Student at Carnegie Mellon University
+        bio: Graduate Student at Carnegie Mellon University
         external-image: false
         picture: assets/images/profile.jpg
         # twitter: johndoe
@@ -80,7 +80,7 @@ width: large
 projects: true
 about: false
 blog: false
-papers: true
+publications: true
 experience: true
 
 ## Blog

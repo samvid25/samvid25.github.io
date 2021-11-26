@@ -14,7 +14,7 @@ title: Publications
 
 <section class="list">
     {% for category in site.categories %}
-        {% if category[0] == "papers" %}
+        {% if category[0] == "publications" %}
             {% for paper in category[1] %}
                 <div class="container item {% if paper.star %}star{% endif %}">
 					<div class="title">{{ paper.title }}</div>

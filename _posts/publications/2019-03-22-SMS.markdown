@@ -1,6 +1,6 @@
 ---
 title: "Blockchain Research and Applications: A Systematic Mapping Study"
-category: papers
+category: publications
 date: 2019-03-22 00:00
 conference: Springer IETE International Conference on Blockchain Technology (IC-BCT 2019)
 authors:
