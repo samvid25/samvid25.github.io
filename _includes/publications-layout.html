@@ -1,0 +1,29 @@
+{% include base_path %}
+
+{% assign paper = post %}
+
+<script>
+	function drop(v)
+	{
+		$('#'+v).slideToggle();
+	}
+</script>
+
+<li>
+  <div class="{{ include.type | default: "list" }}__item" id="#publications">
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+
+      <div class="paper-title">{{ paper.title }}</div>
+      <div class="conference-date">
+          {{ paper.conference }}, {{ paper.date | date: "%B %Y" }}
+          <div class="paper-authors">{% for author in paper.authors %} {% if author.url != nil %} <a href="{{ author.url }}">{{ author.name }}</a>{% else %} {{ author.name }}{% endif %}{% if author != paper.authors.last %}, {% endif %} {% endfor %}</div>
+      </div>
+      {% if paper.paperlink %}<a href="{{ paper.paperlink }}" class="paper-details"><i class="fas fa-link">&nbsp;</i>Paper</a>&nbsp;&nbsp;{% endif %}
+      {% if paper.abstract %}<span onclick="drop('{{ paper.paperid }}')" class="paper-details"><i class="fas fa-align-justify">&nbsp;</i>Abstract</span>{% endif %}
+      <div id="{{ paper.paperid }}" class="paper-abstract">
+          <div class="abstract">{{ paper.abstract }}</div>
+          <br>
+      </div>
+    </article>
+  </div>
+</li>

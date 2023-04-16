@@ -1,0 +1,24 @@
+{% include base_path %}
+
+{% assign project = post %}
+
+<li>
+  <div class="{{ include.type | default: "list" }}__item" id="#projects">
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+
+      <div class="item {% if project.star %}star{% endif %}">
+          {% if project.githublink %}
+              <a class="url" href="{{ project.githublink }}">
+                  <!-- <aside><time datetime="{{ project.startdate | date:"%m-%Y" }}">{{ project.startdate | date: "%b %Y" }} - {{ project.enddate | date: "%b %Y" }}</time></aside> -->
+                  <span class="title">{{ project.title }}</span>
+                  <span class="project-date" datetime="{{ project.startdate | date:"%m-%Y" }}">{{ project.startdate | date: "%b %Y" }} - {{ project.enddate | date: "%b %Y" }}</span>
+              </a>
+          {% else %}
+              <span class="title archive__item-title">{{ project.title }}</span>
+              <span class="project-date" datetime="{{ project.startdate | date:"%m-%Y" }}">{{ project.startdate | date: "%b %Y" }} - {{ project.enddate | date: "%b %Y" }}</span>
+          {% endif %}
+      </div>
+
+    </article>
+  </div>
+</li>

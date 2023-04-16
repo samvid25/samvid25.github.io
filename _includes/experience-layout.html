@@ -1,0 +1,25 @@
+{% include base_path %}
+
+{% assign e = post %}
+
+<div class="{{ include.type | default: "list" }}__item" id="#experience">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="item {% if e.star %}star{% endif %}">
+        <div>
+            <span class="experience-title archive__item-title">{{ e.title }}</span>
+            <span class="experience-date">
+                <time datetime="{{ e.startdate | date:"%m-%Y" }}">
+                    {% assign sd = e.startdate | date: "%B %Y" %}
+                    {% assign ed = e.enddate | date: "%B %Y" %}
+                    {% if ed == sd %}
+                        {{ e.startdate | date: "%B %Y" }}
+                    {% else %}
+                        {{ e.startdate | date: "%B %Y" }} - {{ e.enddate | date: "%B %Y" }}
+                    {% endif %}
+                </time></span></div>
+        <div class="experience-position">{{ e.position }}</div>
+        <br>
+    </div>
+
+  </article>
+</div>
