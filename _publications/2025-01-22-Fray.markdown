@@ -1,0 +1,20 @@
+---
+title: "Fray: An Efficient General-Purpose Concurrency Testing Platform for the JVM"
+category: publications
+date: 2025-01-22 00:00
+conference: ArXiv
+authors:
+- name: Ao Li
+- name: Byeongjee Kang
+- name: Vasudev Vikram
+- name: Isabella Laybourn
+- name: <b>Samvid Dharanikota</b>
+- name: Shrey Tiwari
+- name: Rohan Padhye
+  url: https://rohan.padhye.org/
+url: https://arxiv.org/pdf/2501.12618
+abstract: "Concurrency bugs are hard to discover and reproduce. Prior work has developed sophisticated algorithms to search for concurrency bugs, such as partial order sampling (POS); however, fundamental limitations with existing platforms for concurrency control hinder effective testing of real-world software. We observe that the design space for concurrency control on managed code involves complex trade-offs between expressibility, applicability, and maintainability on the one hand, and bug-finding efficiency on the other hand. This paper presents Fray, a platform for performing push-button concurrency testing of data-race-free JVM programs. The key insight behind Fray is that effective controlled concurrency testing requires orchestrating thread interleavings without replacing existing concurrency primitives, while encoding their semantics for faithfully expressing the set of all possible program behaviors. Fray incorporates a novel concurrency control mechanism called shadow locking, designed to make controlled concurrency testing practical and efficient for JVM programs. In an empirical evaluation on 53 benchmark programs with known bugs (SCTBench and JaConTeBe), Fray with random search finds 70% more bugs than JPF and 77% more bugs than RR's chaos mode. We also demonstrate Fray's push-button applicability on 2,655 tests from Apache Kafka, Lucene, and Google Guava. In these mature projects, Fray successfully discovered 18 real-world concurrency bugs that can cause 363 tests to fail reproducibly."
+paperlink: https://arxiv.org/pdf/2501.12618
+hidden: true # don't count this post in blog pagination
+paperid: 7
+---

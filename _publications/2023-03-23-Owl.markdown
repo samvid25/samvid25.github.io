@@ -9,6 +9,7 @@ authors:
 - name: Pratap Singh
 - name: <b>Samvid Dharanikota</b>
 - name: Bryan Parno
+  url: https://www.andrew.cmu.edu/user/bparno/
 url: https://eprint.iacr.org/2023/473
 abstract: "Computationally sound protocol verification tools promise to deliver full-strength cryptographic proofs for security protocols. Unfortunately, current tools lack either modularity or automation.
 
